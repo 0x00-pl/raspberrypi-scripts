@@ -14,9 +14,9 @@ wget http://archive.raspbian.org/raspbian.public.key -O - | apt-key add -
 
 apt-get clean
 apt-get update
-apt-get install -y apt-transport-https netselect-apt
+apt-get install --force-yes apt-transport-https netselect-apt
 netselect-apt -o /etc/apt/sources.list
 
 apt-get update
-apt-get install -y aptitude git python3
+apt-get install --force-yes aptitude git python3 build-essential
 

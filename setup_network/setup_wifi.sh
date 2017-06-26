@@ -18,7 +18,7 @@ service dhcpcd start
 
 cp hostapd/hostapd.conf /etc/hostapd/hostapd.conf
 echo "ssid=PI_${ETHMAC}" >> /etc/hostapd/hostapd.conf
-echo "wpa_passphrase=123456" >> /etc/hostapd/hostapd.conf
+echo "wpa_passphrase=12345678" >> /etc/hostapd/hostapd.conf
 cp default/hostapd /etc/default/hostapd
 service hostapd start
 

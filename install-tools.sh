@@ -1,2 +1,1 @@
-apt-get install -y --force-yes htop curl sshfs proxychains openvpn
-
+apt-get install -y htop curl sshfs proxychains openvpn

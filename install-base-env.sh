@@ -8,5 +8,5 @@ EOF
 wget http://archive.raspbian.org/raspbian.public.key -O - | apt-key add -
 
 apt-get update
-apt-get install -y --force-yes aptitude git python3 build-essential proxychains sshfs
+apt-get install -y aptitude git python3 build-essential proxychains sshfs network-manager
 

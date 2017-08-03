@@ -1,4 +1,5 @@
 mv /etc/apt/sources.list /etc/apt/sources.list.back
+touch /etc/apt/sources.list.d
 mv /etc/apt/sources.list.d /etc/apt/sources.list.d.back
 cat > /etc/apt/sources.list << EOF
 deb https://mirrors.ustc.edu.cn/raspbian/raspbian stable main contrib non-free

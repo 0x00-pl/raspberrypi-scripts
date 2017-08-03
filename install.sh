@@ -7,3 +7,4 @@ sudo sh install-node-env.sh
 sudo sh setup_network/setup_wifi.sh
 sudo sh setup_network/enable_ip_forward.sh
 sudo sh patch_openresolv/patch.sh
+sudo sh config-proxychains.sh

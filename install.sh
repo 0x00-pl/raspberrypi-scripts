@@ -1,6 +1,6 @@
 cd `dirname $0`
 
-sodu sh enable_root_ssh.sh
+sudo sh enable_root_ssh.sh
 sudo sh install-base-env.sh
 sudo sh install-tools.sh
 sudo sh install-node-env.sh

@@ -289,7 +289,7 @@ fi
 print_status "Confirming \"${DISTRO}\" is supported..."
 
 if [ -x /usr/bin/curl ]; then
-    exec_cmd_nobail "curl -sLf -o /dev/null 'https://deb.nodesource.com/${NODEREPO}/dists/${DISTRO}/Release'"
+    exec_cmd_nobail "proxychains curl -sLf -o /dev/null 'https://deb.nodesource.com/${NODEREPO}/dists/${DISTRO}/Release'"
     RC=$?
 else
     exec_cmd_nobail "wget -qO /dev/null -o /dev/null 'https://deb.nodesource.com/${NODEREPO}/dists/${DISTRO}/Release'"
@@ -311,7 +311,7 @@ fi
 print_status 'Adding the NodeSource signing key to your keyring...'
 
 if [ -x /usr/bin/curl ]; then
-    exec_cmd 'curl -s https://deb.nodesource.com/gpgkey/nodesource.gpg.key | apt-key add -'
+    exec_cmd 'proxychains curl -s https://deb.nodesource.com/gpgkey/nodesource.gpg.key | apt-key add -'
 else
     exec_cmd 'wget -qO- https://deb.nodesource.com/gpgkey/nodesource.gpg.key | apt-key add -'
 fi

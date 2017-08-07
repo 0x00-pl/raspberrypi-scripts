@@ -6,4 +6,4 @@ cat proxychains_setup_8.x | sudo -E bash -
 
 sudo apt-get install -y nodejs
 
-npm install -g pm2
+sudo npm install -g pm2

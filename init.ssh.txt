@@ -10,6 +10,8 @@ git clone https://github.com/0x00-pl/raspberrypi-scripts.git
 cd raspberrypi-scripts
 sudo sh install.sh
 
+node -v
+
 cd ../box-tools/
 npm install
 

@@ -1,6 +1,7 @@
 cd `dirname $0`
 
-sudo sh enable_root_ssh.sh
+sudo sh config-keyboard.sh
+sudo sh enable-root-ssh.sh
 sudo sh install-base-env.sh
 sudo sh install-tools.sh
 sudo sh install-node-env.sh
